@@ -9,11 +9,8 @@ export default class GithubHeaderLink extends React.Component {
       const divStyle = {
         position: "absolute",
         top: "2vh",
-        left: 0,
-        right: 0,
-        marginLeft: "auto",
-        marginRight: "auto",
-        width: "1.33em"
+        left: "50%",
+        transform: "translateX(-50%)"
       };
       return (
         <div style={divStyle}>
