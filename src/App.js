@@ -3,6 +3,7 @@ import './App.css';
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
 import DarkModeToggle from './DarkModeToggle/DarkModeToggle';
+import GithubHeaderLink from './GithubHeaderLink/GithubHeaderLink';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ Write text on the black textbox and see real time how it looks on markdown forma
 
 ## Examples:
 
-### Code block:
+### Code block
 Some inline code \`<div></div>\`, and multiline code:
 
 \`\`\`c
@@ -52,6 +53,7 @@ Numbered:
 `
     }
     this.inputChange = this.inputChange.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
     this.inputBoxRef = React.createRef();
   }
 
@@ -78,6 +80,7 @@ Numbered:
   render() {
     return (
       <div className="App">
+        <GithubHeaderLink href="//github.com/pepe386/markdown-previewer" />
         <DarkModeToggle lightModeCss="/markdown-previewer/App.css" darkModeCss="/markdown-previewer/App-dark.css" />
         <InputBox onChange={this.inputChange} value={this.state.text} ref={this.inputBoxRef} onKeyDown={this.onKeyDown} />
         <OutputBox value={this.state.text} />
