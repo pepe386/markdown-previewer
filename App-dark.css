@@ -104,7 +104,8 @@ ul, ol {
 }
 
 html {
-    background-color: #181a1b !important;
+    /* background-color: #181a1b !important; */
+    background-color: rgb(43, 47, 49) !important;
 }
 html, body, input, textarea, select, button {
     background-color: #181a1b;
