@@ -1,0 +1,38 @@
+.dark-mode-toggle {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+.dark-mode-toggle input[type="radio"] {
+    display: none;
+  }
+
+.dark-mode-toggle label {
+    background-color: #ddd;
+    padding: 4px 11px;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.dark-mode-toggle input[id="light"]:checked+label {
+    background-color: #bbb;
+    color: black;
+}
+
+.dark-mode-toggle input[id="light"]:not(:checked)+label {
+    background-color: #ddd;
+    color: black;
+}
+
+.dark-mode-toggle input[id="dark"]:not(:checked)+label {
+    background-color: #ddd;
+    color: black;
+}
+
+.dark-mode-toggle input[id="dark"]:checked+label {
+    background-color: #bbb;
+    color: black;
+}

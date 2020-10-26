@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
+import DarkModeToggle from './DarkModeToggle/DarkModeToggle';
 
 class App extends React.Component {
   constructor(props) {
@@ -77,6 +78,7 @@ Numbered:
   render() {
     return (
       <div className="App">
+        <DarkModeToggle lightModeCss="/markdown-previewer/App.css" darkModeCss="/markdown-previewer/App-dark.css" />
         <InputBox onChange={this.inputChange} value={this.state.text} ref={this.inputBoxRef} onKeyDown={this.onKeyDown} />
         <OutputBox value={this.state.text} />
       </div>
