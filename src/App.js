@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       text: `# Markdown Preview
-Write text on the black textbox and see real time how it looks on markdown format. Markdown is a text to html conversion format developed on 2004 by John Gruber and Aaron Swartz. See the [official Markdown website](https://daringfireball.net/projects/markdown)
+Write text on the black textbox and see real time how it looks on markdown format. Markdown is a text to html conversion format developed on 2004 by John Gruber and Aaron Swartz. See the [official Markdown website.](https://daringfireball.net/projects/markdown)
 
 ## Examples:
 

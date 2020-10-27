@@ -44,7 +44,7 @@ export default class DarkModeToggle extends React.Component {
                 <input type="radio" id="light" name="light" value="light" onChange={this.setLightMode} checked={!this.state.darkMode} />
                 <label htmlFor="light">Light</label>
                 <input type="radio" id="dark" name="dark" value="dark" onChange={this.setDarkMode} checked={this.state.darkMode} />
-                <label htmlFor="dark">Dark</label>
+                <label htmlFor="dark">Dark&nbsp;</label>
             </div>
         );
     }
